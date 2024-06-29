@@ -83,7 +83,7 @@ export const login = async (req, res) => {
 		}
 		// console.log(user);
 		if (!user.verified) {
-			res.status(400).json({ error: "user not verified" });
+			return res.status(400).json({ error: "user not verified" });
 		}
 
 		generateTokenAndSetCookie(user._id, res);
