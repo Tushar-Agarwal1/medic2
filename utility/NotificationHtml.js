@@ -1,4 +1,4 @@
-//import image from "../assests/email.png"
+
 const html = (msg, token) => {
 	return `<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -334,52 +334,52 @@ ul.social li{
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
           			<td class="logo" style="text-align: center;">
-			            <h1><a href="#">Medic India 's Healthcare Platform </a></h1>
-					
-			          </td >
-          		</tr >
-          	</table >
-          </td >
-	      </tr >< !--end tr-- >
+			            <h1><a href="#">Medic India 's health care platform</a></h1>
+			          </td>
+          		</tr>
+          	</table>
+          </td>
+	      </tr><!-- end tr -->
 	      <tr>
           <td valign="middle" class="hero bg_white" style="padding: 3em 0 2em 0;">
-            <img src= alt="" style="width: 300px; max-width: 600px; height: auto; margin: auto; display: block;">
+            <img src="../assests/email.png"alt="" style="width: 300px; max-width: 600px; height: auto; margin: auto; display: block;">
           </td>
-	      </tr><!--end tr-- >
-	<tr>
-		<td valign="middle" class="hero bg_white" style="padding: 2em 0 4em 0;">
-			<table>
+	      </tr><!-- end tr -->
 				<tr>
-					<td>
-						<div class="text" style="padding: 0 2.5em; text-align: center;">
-							<h2>Notification,Updates</h2>
-							<h3>${msg}</h3>
-							<h1>${token}<h1>
-							</div>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr><!-- end tr -->
-			<!-- 1 Column Text + Button : END -->
-		</table>
-		<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-			<tr>
-				<td valign="middle" class="bg_light footer email-section">
+          <td valign="middle" class="hero bg_white" style="padding: 2em 0 4em 0;">
+            <table>
+            	<tr>
+            		<td>
+            			<div class="text" style="padding: 0 2.5em; text-align: center;">
+            				
+            				<h2>Medic A platform for maintaining health records</h2>
+							<H3>${msg}<H1>
+            			 <p>${token}</p>
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+      <!-- 1 Column Text + Button : END -->
+      </table>
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td valign="middle" class="bg_light footer email-section">
+           
+          </td>
+        </tr><!-- end: tr -->
+        <tr>
+          <td class="bg_light" style="text-align: center;">
+          	<p>No longer want to receive these email? You can <a href="#" style="color: rgba(0,0,0,.8);">Unsubscribe here</a></p>
+          </td>
+        </tr>
+      </table>
 
-				</td>
-			</tr><!-- end: tr -->
-			<tr>
-				<td class="bg_light" style="text-align: center;">
-					<p>No longer want to receive these email? You can <a href="#" style="color: rgba(0,0,0,.8);">Unsubscribe here</a></p>
-				</td>
-			</tr>
-		</table>
-
-	</div>
-  </center >
-</body >
-</html > `
+    </div>
+  </center>
+</body>
+</html>`
 }
 
 export default html;
