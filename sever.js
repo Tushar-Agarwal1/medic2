@@ -1,11 +1,7 @@
-
-
 import express from 'express';
 const app = express();
 import mongoose from 'mongoose';
 import cookieParser from "cookie-parser";
-
-
 import authRoutes from "./Routes/auth.js"
 
 //import userRoutes from "./Routes/user.js";
@@ -31,9 +27,6 @@ app.use(authRoutes);
 
 //app.use("/api/users", userRoutes);
 app.use(routes);
-
-
-
 
 
 
