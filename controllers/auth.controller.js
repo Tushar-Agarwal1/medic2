@@ -112,10 +112,10 @@ export const logout = (req, res) => {
 };
 export const verifyAccount = async (req, res) => {
 	//console.log(req.cookies);
-	//console.log((req.body);
+	console.log(req.body);
 
-	const decoded = jwt.verify(req.cookies.jwt, 'medic');
-	const user = await User.findById(decoded.userId);
+	//const decoded = jwt.verify(req.cookies.jwt, 'medic');
+	const user = await User.findById(req.body._id);
 	console.log(user);
 	if (req.body.otp == user.otp) {
 		user.verified = true;
